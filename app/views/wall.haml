@@ -1,0 +1,4 @@
+#wall
+  %ul
+    - @issues.each do |issue|
+      %li= partial 'card', locals: { issue: issue }

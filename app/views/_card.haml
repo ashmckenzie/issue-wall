@@ -1,0 +1,33 @@
+%section.card
+
+  %div.header
+    %div.labels
+      %ul
+        - issue.labels.each do |label|
+          %li
+            %div.label{'style' => "background-color: \##{label.color}"}
+              %div= label.name
+
+    %div.number
+      %a{ href: issue.html_url, target: '_blank' }
+        = precede '#' do
+          = issue.number
+
+  %div.middle
+
+    %div.created-by
+      %img{ src: issue.user.avatar_url }
+
+    %div.title-and-created-at
+
+      %div.title
+        %h1
+          %a{ href: "/card/#{issue.number.to_s}" }
+            = issue.title
+
+      %div.created-at
+        = issue.created_at
+
+    - unless issue.body.blank?
+      %div.body
+        %pre~ issue.body

@@ -1,0 +1,103 @@
+body {
+  background-image: url("/images/wood_1.png"); }
+
+#wall {
+  margin: 0 auto;
+  width: 1100px; }
+  #wall ul {
+    margin: 0 auto;
+    padding: 0; }
+    #wall ul li {
+      display: block;
+      float: left;
+      list-style: none;
+      margin-right: 14px; }
+  #wall section.card {
+    height: 360px;
+    margin: 10px auto;
+    width: 310px; }
+    #wall section.card .header {
+      display: none;
+      margin-top: 0; }
+    #wall section.card .middle .title-and-created-at {
+      width: 190px; }
+      #wall section.card .middle .title-and-created-at .title {
+        font-size: 0.8em; }
+      #wall section.card .middle .title-and-created-at .created-by img {
+        width: 40px; }
+    #wall section.card .body {
+      height: 230px; }
+
+#card section.card {
+  height: 460px;
+  margin: 20px auto;
+  width: 710px; }
+  #card section.card .middle .title-and-created-at {
+    width: 590px; }
+  #card section.card .body {
+    height: 310px; }
+
+section.card {
+  background-color: white;
+  font-family: arial;
+  padding: 20px; }
+  section.card .header {
+    float: left;
+    width: 100%; }
+    section.card .header .number {
+      font-size: 2em;
+      float: right; }
+      section.card .header .number a {
+        color: black;
+        text-decoration: none; }
+        section.card .header .number a:active {
+          text-decoration: underline; }
+    section.card .header .labels {
+      float: left; }
+      section.card .header .labels ul {
+        margin: 0;
+        padding: 0; }
+        section.card .header .labels ul li {
+          list-style: none;
+          display: table-cell; }
+          section.card .header .labels ul li .label {
+            font-size: 0.75em;
+            border: 1px solid #bbbbbb;
+            border-radius: 3px;
+            margin-right: 8px; }
+            section.card .header .labels ul li .label div {
+              background: rgba(255, 255, 255, 0.4);
+              font-weight: bold;
+              padding: 6px; }
+  section.card .middle {
+    clear: both;
+    float: left;
+    margin-top: 12px;
+    width: 100%; }
+    section.card .middle .created-by {
+      float: left; }
+      section.card .middle .created-by img {
+        border: 1px solid #cccccc; }
+    section.card .middle .title-and-created-at {
+      margin-left: 12px;
+      float: left; }
+      section.card .middle .title-and-created-at .title {
+        float: left; }
+        section.card .middle .title-and-created-at .title h1 {
+          margin: 0 0 10px 0; }
+      section.card .middle .title-and-created-at .created-at {
+        clear: left;
+        font-size: 0.8em; }
+    section.card .middle .body {
+      border: 1px solid #eeeeee;
+      border-radius: 5px;
+      clear: both;
+      float: left;
+      overflow: scroll;
+      margin-top: 14px;
+      width: 100%; }
+      section.card .middle .body pre {
+        font-size: 1.1em;
+        line-height: 22px;
+        padding: 0 18px;
+        white-space: pre-wrap; }
